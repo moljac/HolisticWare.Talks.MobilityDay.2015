@@ -23,6 +23,8 @@ namespace Sample.XamarinForms.WinPhone
 		/// </summary>
 		public App()
 		{
+			Xamarin.Insights.Initialize("Your API Key");
+
 			// Global handler for uncaught exceptions.
 			UnhandledException += Application_UnhandledException;
 
