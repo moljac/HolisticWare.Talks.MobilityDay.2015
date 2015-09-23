@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{ADF260BF-30C7-4BAF-9B91-4F1BAB8804C8}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Tasky.Core</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)BusinessLayer\About.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)DataAccessLayer\About.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)DataLayer\About.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)BusinessLayer\Contracts\BusinessEntityBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BusinessLayer\Contracts\IBusinessEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BusinessLayer\Managers\TaskManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BusinessLayer\Task.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataAccessLayer\TaskRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataLayer\SQLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)DataLayer\TaskDatabase.cs" />
+  </ItemGroup>
+</Project>
