@@ -12,12 +12,14 @@ namespace Xamarin.UITest.Native.VecernjiList
 			"/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/Android/vecernjilistlite.institut.hr-1/base.apk"
 			;
 		private static string  app_file_ios_ipa = 
-			"/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/iOS/VL/Večernji list 2.24.ipa"
+			"/Users/moljac/Projects/HolisticWare/Talks/HolisticWare.Talks.MobilityDay.2015/samples/02-Xamarin.UITest/029-Xamarin.UITest-Native-Full-Hybrid/app-files-native/iOS/VL/Večernji list 2.24.ipa"
+			// "/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/iOS/VL/Večernji list 2.24.ipa"
 			;
+
+		static IApp app = null;
 
 		public static IApp StartApp (Platform platform)
 		{
-			IApp app = null;
 
 			// TODO: If the iOS or Android app being tested is included in the solution 
 			// then open the Unit Tests window, right click Test Apps, select Add App Project
@@ -34,7 +36,8 @@ namespace Xamarin.UITest.Native.VecernjiList
 						.StartApp ()
 						;
 
-				app.Repl ();
+				//app.Repl ();
+				DoSomeTest();
 			}
 			else if (platform == Platform.iOS)
 			{
@@ -52,6 +55,26 @@ namespace Xamarin.UITest.Native.VecernjiList
 			}
 
 			return app;
+		}
+
+
+		public static void DoSomeTest ()
+		{
+			app.Tap(c => c.Marked("OK")); ;
+			app.Tap(c => c.Marked("OK")); ;
+			app.Tap(c => c.Marked("OK")); ;
+			app.Tap(c => c.Marked("OK")); ;
+			app.Tap(c => c.Marked("OK")); ;
+
+			app.Tap(c => c.Marked("Povratak")); ;
+			app.Tap(c => c.Marked("Sport")); ;
+			app.Tap(c => c.Marked("Strani nogomet")); ;
+			app.Tap(c => c.Marked("prije 7 dana")); ;
+			app.Tap(c => c.Marked("Povratak")); ;
+			app.Tap(c => c.Marked("Navigate home")); ;
+			app.Tap(c => c.Marked("Vijesti")); ;
+
+			return;
 		}
 	}
 }

@@ -1,0 +1,15 @@
+﻿
+
+Test startup
+
+Problem:
+
+	Error
+
+		Failure [INSTALL_FAILED_MISSING_SHARED_LIBRARY]
+		rm failed for -f, No such file or directory
+
+Analysis:
+
+	emulator with google APIs needed
+
