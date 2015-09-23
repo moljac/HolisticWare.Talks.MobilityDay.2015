@@ -40,7 +40,7 @@ namespace Sample.XamarinForms.Droid
 			//			
 			//
 						Android.Content.Context app_conext = this;
-						Xamarin.Insights.Initialize("82cfb6ddcd406068c713d90cfafef14aa05d5dcf", app_conext);
+						Xamarin.Insights.Initialize(Sample.XamarinForms.Constants.INSIGHTS_API_KEY, app_conext);
 			// 
 			//	iOS
 			//		in 
