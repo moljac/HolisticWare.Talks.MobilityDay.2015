@@ -31,10 +31,17 @@
 3.	Presentation - Testing		
 4.	Demo2: Testing		
 	1.	unit testing		
-		1.	Tasky 		
+		1.	021-TaskyPro 		
 		2.	project templates		
 			1.	launch 				
-	2.	Xamamrin.UITest		
+	2.	Xamarin.UITest			
+		1.	021-TaskyPro		
+			1.	Android		
+		2.	029-Xamarin.UITest-Native-Full-Hybrid			
+			1.	Vecernji List		
+			2.	Untappd - Discover Beer - Android		
+			3.	HAK		
+				AVD needs google play services		
 3.	Presentation - Xamarin.test.Cloud		
 	1.	Xamarin.Test.Cloud
 		1.	links			
