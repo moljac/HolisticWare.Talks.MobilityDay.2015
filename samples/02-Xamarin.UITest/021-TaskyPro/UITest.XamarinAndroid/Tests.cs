@@ -38,8 +38,9 @@ namespace UITest.XamarinAndroid
 		public void AppLaunches ()
 		{
 			app.Screenshot ("First screen.");
-		}
 
+	
+		}
 
 
 
