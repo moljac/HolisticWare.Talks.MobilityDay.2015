@@ -9,10 +9,13 @@ namespace Xamarin.UITest.Native.HAK
 	public class AppInitializer
 	{
 		private static string  app_file_android_apk = 
-			"/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/Android/com.infinum.hak-1/base.apk"
+			//"/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/Android/com.infinum.hak-1/base.apk"
+			//"../../app-files-native/Android/com.infinum.hak-1/base.apk"
+			"D:\\lara\\HolisticWare.Talks.MobilityDay.2015\\samples\\02-Xamarin.UITest\\029-Xamarin.UITest-Native-Full-Hybrid\\app-files-native\\Android\\com.infinum.hak-1\\base.apk"
 			;
-		private static string  app_file_ios_ipa = 
-			"/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/iOS/HAK/HAK 2.6.6.ipa"
+		private static string  app_file_ios_ipa =
+			//"/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/iOS/HAK/HAK 2.6.6.ipa"
+			"D:\\lara\\HolisticWare.Talks.MobilityDay.2015\\samples\\02-Xamarin.UITest\\029-Xamarin.UITest-Native-Full-Hybrid\\app-files-native\\iOS\\HAK\\HAK 2.6.6.ipa"
 			;
 
 		public static IApp StartApp (Platform platform)
@@ -33,8 +36,6 @@ namespace Xamarin.UITest.Native.HAK
 						.ApkFile (app_file_android_apk)
 						.StartApp ()
 						;
-
-				app.Repl ();
 			}
 			else if (platform == Platform.iOS)
 			{
@@ -47,9 +48,9 @@ namespace Xamarin.UITest.Native.HAK
 						.AppBundle (app_file_ios_ipa)
 						.StartApp ()
 						;
-
-				app.Repl ();
 			}
+
+		app.Repl();
 
 			return app;
 		}
