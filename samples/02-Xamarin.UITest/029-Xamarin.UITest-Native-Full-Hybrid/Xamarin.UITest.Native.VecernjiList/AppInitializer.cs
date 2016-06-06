@@ -9,11 +9,13 @@ namespace Xamarin.UITest.Native.VecernjiList
 	public class AppInitializer
 	{
 		private static string  app_file_android_apk = 
-			"/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/Android/vecernjilistlite.institut.hr-1/base.apk"
+			//"/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/Android/vecernjilistlite.institut.hr-1/base.apk"
+			@"D:\lara\HolisticWare.Talks.MobilityDay.2015\samples\02-Xamarin.UITest\029-Xamarin.UITest-Native-Full-Hybrid\app-files-native\Android\vecernjilistlite.institut.hr-1\base.apk"
 			;
 		private static string  app_file_ios_ipa = 
-			"/Users/moljac/Projects/HolisticWare/Talks/HolisticWare.Talks.MobilityDay.2015/samples/02-Xamarin.UITest/029-Xamarin.UITest-Native-Full-Hybrid/app-files-native/iOS/VL/Večernji list 2.24.ipa"
+			//"/Users/moljac/Projects/HolisticWare/Talks/HolisticWare.Talks.MobilityDay.2015/samples/02-Xamarin.UITest/029-Xamarin.UITest-Native-Full-Hybrid/app-files-native/iOS/VL/Večernji list 2.24.ipa"
 			// "/Users/moljac/Projects/Samples/Samples.Xamarin.UITest/samples/Native-Full-Hybrid/app-files-native/iOS/VL/Večernji list 2.24.ipa"
+			@"D:\lara\HolisticWare.Talks.MobilityDay.2015\samples\02-Xamarin.UITest\029-Xamarin.UITest-Native-Full-Hybrid\app-files-native\iOS\VL\\Večernji list 2.24.ipa"
 			;
 
 		static IApp app = null;
